@@ -35,7 +35,6 @@ public class GameView extends GridLayout {
 
     private void initGameView() {
         setColumnCount(4);
-        //setBackgroundColor(0xffBFB6A5);
         setOnTouchListener(new OnTouchListener() {
             private float startX, startY, offsetX, offsetY;
             @Override

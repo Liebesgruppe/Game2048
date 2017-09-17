@@ -11,6 +11,15 @@
     <style name="NoTitle" parent="Theme.AppCompat.DayNight.NoActionBar" >
         <item name="android:windowNoTitle">true</item>
         <item name="android:windowFullscreen">true</item>
+        <item name="alertDialogTheme">@style/Theme.AppCompat.Light.Dialog.Alert.Self</item>
+    </style>
+    
+    <style name="Theme.AppCompat.Light.Dialog.Alert.Self"
+        parent="@style/ThemeOverlay.AppCompat.Dialog.Alert">
+        <!-- 修改AlertDialog中按钮的颜色 -->
+        <item name="colorAccent">@color/colorButton</item>
+        <!-- 修改AlertDialog的背景色颜色 -->
+        <item name="android:windowBackground">@color/colorDividerBg2</item>
     </style>
 
 </resources>

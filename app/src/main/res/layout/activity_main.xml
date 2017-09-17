@@ -1,11 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    android:background="@color/color1"
+    android:background="@color/colorBackGround"
     tools:context="com.glazbeni.org.game2048.MainActivity">
 
     <RelativeLayout
@@ -17,7 +16,7 @@
             android:layout_height="wrap_content"
             android:layout_centerHorizontal="true"
             android:layout_marginTop="30dp"
-            android:text="苟 / 利 / 国 / 家 / 生 / 死 / 以"
+            android:text="@string/text1"
             android:textAppearance="@style/TextAppearance.AppCompat" />
 
         <TextView
@@ -49,16 +48,16 @@
         android:layout_height="wrap_content"
         android:layout_gravity="center"
         android:layout_marginBottom="30dp"
-        android:text="岂 / 因 / 祸 / 福 / 避 / 趋 / 之"
+        android:text="@string/text2"
         android:textAppearance="@style/TextAppearance.AppCompat" />
 
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:id="@+id/btn_restart"
-        android:background="@color/color2"
+        android:background="@color/colorButton"
         android:layout_gravity="center"
-        android:textColor="@color/color3"
-        android:text="重新续命"/>
+        android:textColor="@color/colorDividerBg"
+        android:text="@string/btnText"/>
 
 </LinearLayout>

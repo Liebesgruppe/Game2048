@@ -1,3 +1,6 @@
 <resources>
     <string name="app_name">2048</string>
+    <string name="text1">苟 / 利 / 国 / 家 / 生 / 死 / 以</string>
+    <string name="text2">岂 / 因 / 祸 / 福 / 避 / 趋 / 之</string>
+    <string name="btnText">重新续命</string>
 </resources>
