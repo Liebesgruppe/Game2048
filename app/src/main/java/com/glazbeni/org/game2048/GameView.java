@@ -18,6 +18,11 @@ import java.util.List;
 
 public class GameView extends GridLayout {
 
+    // 存储所有未填充数字的空点
+    public static List<Point> emptyPoint = new ArrayList<>();
+    //
+    public static Card[][] cardsMap = new Card[4][4];
+
     public GameView(Context context) {
         super(context);
         initGameView();
@@ -91,7 +96,7 @@ public class GameView extends GridLayout {
                 }
             }
         }
-        if (merge == true) {
+        if (merge) {
             addRandomNum();
             checkComplete();
         }
@@ -121,7 +126,7 @@ public class GameView extends GridLayout {
                 }
             }
         }
-        if (merge == true) {
+        if (merge) {
             addRandomNum();
             checkComplete();
         }
@@ -151,7 +156,7 @@ public class GameView extends GridLayout {
                 }
             }
         }
-        if (merge == true) {
+        if (merge) {
             addRandomNum();
             checkComplete();
         }
@@ -181,7 +186,7 @@ public class GameView extends GridLayout {
                 }
             }
         }
-        if (merge == true) {
+        if (merge) {
             addRandomNum();
             checkComplete();
         }
@@ -199,7 +204,6 @@ public class GameView extends GridLayout {
         startGame();
     }
 
-    public static Card[][] cardsMap = new Card[4][4];
     private void addCards(int cardWidth, int cardHeight) {
         Card c;
 
@@ -214,7 +218,6 @@ public class GameView extends GridLayout {
         }
     }
 
-    public static List<Point> emptyPoint = new ArrayList<>();
     public static void addRandomNum() {
         emptyPoint.clear();
         for (int y = 0; y < 4; y++) {

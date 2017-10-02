@@ -82,7 +82,6 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         if (saveScore < showBestScore()) {
             editor.putInt("bestScore", showBestScore()).commit();
         }
-        System.out.println(getSharedPreferences("score", MODE_PRIVATE).getInt("bestScore", 3));
     }
 
     @Override
